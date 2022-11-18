@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Uygulama</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      #ShowCase {
+        background: url("snow.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 10px;
+        height: 600px;
+        width: 100%;
+        border: 5px solid wheat;
+      }
+      h1 {
+        padding: 10px;
+        background-color: antiquewhite;
+        border: 5px double rgb(227, 200, 200);
+        border-width: 5px;
+      }
+      h2 {
+        padding: 10px;
+        margin-left: 25px;
+      }
+      #HowItWorks {
+        background-color: #c8dbbe;
+        padding: 10px;
+      }
+      .main-header {
+        background-color: antiquewhite;
+        padding: 8px 16px;
+      }
+      .main-nav {
+        display: inline-block;
+        width: calc(100% - 99px);
+        text-align: right;
+      }
+      .main-nav__items {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+      }
+      .item {
+        display: inline-block;
+        margin: 0px 7px;
+      }
+      .movieApp {
+        color: #9e7676;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .main-nav__items a {
+        text-decoration: none;
+        color: #9e7676;
+      }
+
+      .main-nav__items a:hover,
+      .main-nav__items li:hover::before {
+        color: red;
+      }
+      .main-nav__items a:active,
+      .main-nav__items li:active::before {
+        color: blue;
+      }
+      .main-nav__items li::before {
+        content: "\2022";
+        color: #9e7676;
+      }
+      .item_login a {
+        color: #3a8891;
+        background-color: #f6f2eb;
+        padding: 4px 16px;
+        border-radius: 8px;
+        border: 2px solid #819c73;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header kısmı-->
+    <header class="main-header">
+      <a href="#" class="movieApp">MovieApp</a>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="item">
+            <a href="#">Home</a>
+          </li>
+          <li class="item">
+            <a href="#">Movies</a>
+          </li>
+          <li class="item item_login">
+            <a href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main kısmı -->
+    <main>
+      <section id="ShowCase">
+        <h1>How It Works</h1>
+        <h2>Welcome the our website. Thanks for your visiting.</h2>
+      </section>
+
+      <section id="HowItWorks">
+        <h1>How It Works ?</h1>
+        <h2>Use this steps for start your application.</h2>
+      </section>
+    </main>
+  </body>
+</html>
