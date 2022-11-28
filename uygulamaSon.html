@@ -2,12 +2,18 @@
 <html lang="en">
   <head>
     <title>Uygulama</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
     <style>
       * {
         box-sizing: border-box;
       }
       body {
         margin: 0;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
       }
       #ShowCase {
         background: url("snow.jpg");
@@ -21,18 +27,22 @@
       }
       h1 {
         padding: 10px;
-        background-color: antiquewhite;
+        background-color: rgb(243, 228, 200);
         border: 5px double rgb(227, 200, 200);
         border-width: 5px;
       }
-      h2 {
-        padding: 10px;
-        margin-left: 25px;
-      }
+
       #HowItWorks {
-        background-color: #c8dbbe;
+        background-color: #c4e1b5;
         padding: 10px;
+        text-align: center;
       }
+      #HowItWorks h2 {
+        color: #3a2e24;
+        font-size: 30px;
+        font-weight: 600px;
+      }
+
       .main-header {
         background-color: antiquewhite;
         padding: 8px 16px;
@@ -81,6 +91,22 @@
         border-radius: 8px;
         border: 2px solid #819c73;
       }
+      .row {
+        margin-bottom: 40px;
+      }
+      .col {
+        display: inline-block;
+        width: 30%;
+        padding: 16px;
+        margin: 8px;
+      }
+      .icon-box h3 {
+        color: #6f4f35;
+        font-size: 26px;
+      }
+      .icon-box i {
+        color: rgb(165, 54, 54);
+      }
     </style>
   </head>
   <body>
@@ -105,13 +131,39 @@
     <!-- main kısmı -->
     <main>
       <section id="ShowCase">
-        <h1>How It Works</h1>
-        <h2>Welcome the our website. Thanks for your visiting.</h2>
+        <h1>Welcome to MovieApp</h1>
       </section>
 
       <section id="HowItWorks">
-        <h1>How It Works ?</h1>
-        <h2>Use this steps for start your application.</h2>
+        <!-- div 1 -->
+        <div class="row">
+          <h2>How It Works ?</h2>
+          <p>Use this steps for start your application.</p>
+        </div>
+
+        <!-- div 2 (2. satırın 1. kolonu) -->
+        <div class="row">
+          <div class="icon-box col">
+            <i class="fa-solid fa-right-to-bracket fa-3x"></i>
+            <h3>Register</h3>
+            <p>
+              Firstly, you have to be login. If you don't have an account, then
+              you can register.
+            </p>
+          </div>
+          <!-- 2. satırın 2. kolonu-->
+          <div class="icon-box col">
+            <i class="fa-brands fa-buffer fa-3x"></i>
+            <h3>Choose a plan</h3>
+            <p>Secondly, you should choose a plan that suits you.</p>
+          </div>
+          <!-- 2. satırın 3. kolonu -->
+          <div class="icon-box col">
+            <i class="fa-regular fa-face-smile fa-3x"></i>
+            <h3>Enjoy Movies</h3>
+            <p>Finally, you can watch the movie you want with pleasure.</p>
+          </div>
+        </div>
       </section>
     </main>
   </body>
