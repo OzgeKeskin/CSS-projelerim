@@ -1,0 +1,50 @@
+.btn {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 7px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+.btn-primary {
+  background-color: rgb(255, 127, 193);
+  color: blanchedalmond;
+  border: 2px solid sandybrown;
+}
+.btn-primary:hover {
+  background-color: rgb(146, 208, 246);
+  color: blanchedalmond;
+  border: 2px solid sandybrown;
+}
+.btn-outline-primary {
+  background-color: rgb(146, 208, 246);
+  color: blanchedalmond;
+  border: 2px solid sandybrown;
+}
+.btn-outline-primary:hover {
+  background-color: rgb(255, 127, 193);
+  color: blanchedalmond;
+  border: 2px solid sandybrown;
+}
+.btn-secondary {
+  background-color: rgb(143, 143, 222);
+  color: azure;
+  border: 2px solid rgb(168, 195, 238);
+}
+
+.btn-secondary:hover {
+  background-color: rgb(146, 62, 129);
+  color: azure;
+  border: 2px solid rgb(168, 195, 238);
+}
+.btn-outline-secondary {
+  background-color: rgb(146, 62, 129);
+  color: azure;
+  border: 2px solid rgb(168, 195, 238);
+}
+.btn-outline-secondary:hover {
+  background-color: rgb(143, 143, 222);
+  color: azure;
+  border: 2px solid rgb(168, 195, 238);
+}

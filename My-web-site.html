@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Uygulama</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="buttons.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      #ShowCase {
+        background: url("snow.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 10px;
+        height: 600px;
+        width: 100%;
+        border: 5px solid rgb(249, 248, 246);
+      }
+      h1 {
+        padding: 10px;
+        background-color: rgb(203, 214, 218);
+        border: 5px double rgb(246, 244, 244);
+        border-width: 5px;
+      }
+
+      #HowItWorks {
+        background-color: #f5f5f5;
+        padding: 10px;
+        text-align: center;
+      }
+      #HowItWorks h2 {
+        color: #3a2e24;
+        font-size: 30px;
+        font-weight: 600px;
+      }
+
+      .main-header {
+        background-color: rgb(255, 255, 255);
+        padding: 8px 16px;
+      }
+      .main-nav {
+        display: inline-block;
+        width: calc(100% - 99px);
+        text-align: right;
+      }
+      .main-nav__items {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+      }
+      .item {
+        display: inline-block;
+        margin: 0px 7px;
+      }
+      .movieApp {
+        color: #d22c2c;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .main-nav__items a {
+        text-decoration: none;
+        color: #89603f;
+      }
+
+      .main-nav__items a:hover,
+      .main-nav__items li:hover::before {
+        color: red;
+      }
+      .main-nav__items a:active,
+      .main-nav__items li:active::before {
+        color: blue;
+      }
+      .main-nav__items li::before {
+        content: "\2022";
+        color: #eedfdf;
+      }
+
+      .row {
+        margin-bottom: 40px;
+      }
+      .col-3 {
+        display: inline-block;
+        width: 30%;
+        padding: 16px;
+        margin: 8px;
+      }
+      .col-2 {
+        display: inline-block;
+        width: 49%;
+        height: 350px;
+        background-color: rgb(161, 43, 43);
+      }
+      .icon-box h3 {
+        color: #6f4f35;
+        font-size: 26px;
+      }
+      .icon-box i {
+        color: rgb(165, 54, 54);
+      }
+      .features__left {
+        background: url("unnamed.jpg");
+        background-size: cover;
+        background-position: top center;
+      }
+      .features__right {
+        background-color: #edf5f7;
+        padding: 40px;
+        vertical-align: top;
+      }
+      .features__right h3 {
+        font-size: 30px;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 25px;
+      }
+      .plan {
+        text-align: center;
+        padding: 5px;
+        width: 33.3%;
+        float: left;
+      }
+      .plan__badge {
+        background: rgb(146, 200, 234);
+        background-color: white;
+        padding: 8px;
+        border-radius: 5px;
+      }
+      .recommended_plan {
+        color: rgb(125, 125, 218);
+        background-color: rgb(203, 203, 251) !important;
+      }
+      .plan__features {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .plan__features li {
+        margin: 6px 0px;
+      }
+
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .container {
+        margin: 0 auto;
+        width: 1000px;
+      }
+      .inner-plan {
+        background: rgb(216, 237, 248);
+        padding: 25px 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header kısmı-->
+    <header class="main-header">
+      <a href="#" class="movieApp">MovieApp</a>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="item">
+            <a href="#">Home</a>
+          </li>
+          <li class="item">
+            <a href="#">Movies</a>
+          </li>
+          <li class="item item_login">
+            <a class="btn btn-outline-primary" href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main kısmı -->
+    <main>
+      <section id="ShowCase">
+        <h1>Welcome to MovieApp</h1>
+      </section>
+
+      <section id="HowItWorks">
+        <!-- div 1 -->
+        <div class="row">
+          <h2>How It Works ?</h2>
+          <p>Use this steps for start your application.</p>
+        </div>
+
+        <!-- div 2 (2. satırın 1. kolonu) -->
+        <div class="row">
+          <div class="icon-box col-3">
+            <i class="fa-solid fa-right-to-bracket fa-3x"></i>
+            <h3>Register</h3>
+            <p>
+              Firstly, you have to be login. If you don't have an account, then
+              you can register.
+            </p>
+          </div>
+          <!-- 2. satırın 2. kolonu-->
+          <div class="icon-box col-3">
+            <i class="fa-brands fa-buffer fa-3x"></i>
+            <h3>Choose a plan</h3>
+            <p>Secondly, you should choose a plan that suits you.</p>
+          </div>
+          <!-- 2. satırın 3. kolonu -->
+          <div class="icon-box col-3">
+            <i class="fa-regular fa-face-smile fa-3x"></i>
+            <h3>Enjoy Movies</h3>
+            <p>Finally, you can watch the movie you want with pleasure.</p>
+          </div>
+        </div>
+      </section>
+      <section id="features">
+        <div class="row">
+          <div class="col-2 features__left"></div>
+          <div class="col-2 features__right">
+            <h3>Watch all movies & tv shows once they get released!</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <a class="btn btn-secondary" href="#">View features</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="plans">
+        <h2 class="section-title">Become a Premium Member</h2>
+        <div class="container clearfix">
+          <div class="plan">
+            <div class="inner-plan">
+              <h2>Free</h2>
+              <h3>0/month</h3>
+              <ul class="plan__features">
+                <li>HD available</li>
+                <li>Unlimited Movies and TV shows</li>
+                <li>Watch on your phone & tablet</li>
+                <li>Download and watch offline</li>
+                <li>First month Free</li>
+              </ul>
+              <div>
+                <button class="btn btn-primary">Choose Plan</button>
+              </div>
+            </div>
+          </div>
+          <div class="plan">
+            <div class="inner-plan recommended_plan">
+              <h2 class="plan__badge">Recommended</h2>
+              <h2>Basic</h2>
+              <h3>$9.99/month</h3>
+              <ul class="plan__features">
+                <li>HD available</li>
+                <li>Unlimited Movies and TV shows</li>
+                <li>Watch on your phone & tablet</li>
+                <li>Download and watch offline</li>
+                <li>First month Free</li>
+              </ul>
+              <div>
+                <button class="btn btn-primary">Choose Plan</button>
+              </div>
+            </div>
+          </div>
+          <div class="plan">
+            <div class="inner-plan">
+              <h2>Premium</h2>
+              <h3>$19.99/month</h3>
+              <ul class="plan__features">
+                <li>HD available</li>
+                <li>Unlimited Movies and TV shows</li>
+                <li>Watch on your phone & tablet</li>
+                <li>Download and watch offline</li>
+                <li>First month Free</li>
+              </ul>
+              <div>
+                <button class="btn btn-primary">Choose Plan</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
